@@ -25,3 +25,52 @@ header h1 {
   text-align: center;
   font-size: 40px;
 }
+
+/* header p */
+header p {
+  font-size: 20px;
+}
+
+/* pads (clickable things) */
+.pads {
+  background: lightblue;
+  width: 100%;
+  display: flex; /* pads are displayed next together */
+}
+
+/* select all the div inside the pads, (1-6 pads) */
+.pads > div {
+  height: 100px;
+  width: 100px;
+  flex: 1; /* stretch them out */
+}
+
+/* pad 1 */
+.pad1 {
+  background: #60d394;
+}
+
+/* pad 2 */
+.pad2 {
+  background: #d36060;
+}
+
+/* pad 3 */
+.pad3 {
+  background: #c060d3;
+}
+
+/* pad 4 */
+.pad4 {
+  background: #d3d160;
+}
+
+/* pad 5 */
+.pad5 {
+  background: #6860d3;
+}
+
+/* pad 6 */
+.pad6 {
+  background: #60b2d3;
+}
