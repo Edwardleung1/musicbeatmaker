@@ -1,0 +1,27 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* app */
+.app {
+  height: 100vh; /* full screen */
+  display: flex;
+  flex-direction: column; /* stacked on top */
+  justify-content: space-between; /* 1st item flush to top */
+  align-items: center;
+}
+
+/* header H1 */
+header h1 {
+  margin: 50px 30px;
+  text-align: center;
+  font-size: 40px;
+}
