@@ -12,7 +12,7 @@ body {
 
 /* app */
 .app {
-  height: 100vh; /* full screen */
+  min-height: 100vh; /* full screen */
   display: flex;
   flex-direction: column; /* stacked on top */
   justify-content: space-between; /* 1st item flush to top */
@@ -73,4 +73,31 @@ header p {
 /* pad 6 */
 .pad6 {
   background: #60b2d3;
+}
+
+/* keyframes jump */
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
+
+/* get all div in the visuals */
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1); /* how much scaling is done in each direction */
+  z-index: -1; /* goes behind */
 }
